@@ -1,0 +1,22 @@
+package Characters;
+
+public class Enemy implements Characters { // Needs the keyword implements with the interface.
+	
+	private int health = 100;
+	private int lives = 1;
+	
+	public Enemy()
+	{
+		lives = 1;
+	}
+	
+	public Enemy(int i)
+	{
+		lives = i;
+	}
+	
+	public void ReduceHealth(int damage)
+	{
+		health -=damage;
+	}
+}

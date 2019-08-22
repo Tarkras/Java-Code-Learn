@@ -1,0 +1,25 @@
+package Characters;
+
+public class SuperEnemy implements Characters {  // Needs the keyword implements with the interface.
+	
+	private int health = 100;
+	private int lives = 1;
+	
+	public SuperEnemy()
+	{
+		this.health = 1000; // It access the variable health in Enemy.java.
+	}
+	
+	public void ReduceHealth(int damage)
+	{
+		health -=damage;
+	}
+
+	public int getLives() {
+		return lives;
+	}
+
+	public void setLives(int lives) {
+		this.lives = lives;
+	}
+}

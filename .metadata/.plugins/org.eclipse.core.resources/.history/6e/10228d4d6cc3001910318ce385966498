@@ -1,0 +1,36 @@
+package property;
+
+import java.util.*;
+
+public class Property {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/** Properties is used to maintain a list of value which the key is a
+		 *  string and the value is also a string. This is an often used
+		 *  mechanism for storing simple configuration properties for Java
+		 *  applications. */
+		
+		Properties films = new Properties();
+		
+		films.put("Star Wars", "Revenge of the sith");
+		films.put("Batman", "The Dark Knight");
+		films.put("Lord of the Rings", "The Two Towers");
+		
+		System.out.println(films.get("Star Wars"));
+		
+		Iterator i = films.keySet().iterator();
+		
+		while(i.hasNext())
+		{
+			String key = (String)i.next();
+			
+			System.out.println(key + " : " + films.getProperty(key));
+		}
+		
+		
+
+	}
+
+}

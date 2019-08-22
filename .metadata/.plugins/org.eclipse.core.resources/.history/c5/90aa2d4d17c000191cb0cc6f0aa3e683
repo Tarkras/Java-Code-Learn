@@ -1,0 +1,21 @@
+package enumeration;
+
+public class Enumeration {
+	
+	enum DayTranslation {
+		MONDAY("Lunes");
+		TUESDAY("Martes")
+		
+		
+	    String trl;
+		DayTranslation(String trl){
+			this.trl = trl;
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

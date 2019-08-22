@@ -1,0 +1,30 @@
+package interfaces;
+
+import Characters.Enemy;
+import Characters.SuperEnemy;
+
+public class Interfaces {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Enemy e1 = new Enemy(10);
+		Enemy e2 = new Enemy();
+		Enemy e3 = new Enemy(3);
+		SuperEnemy se1 = new SuperEnemy();
+				
+		System.out.println(e1.getLives());
+		System.out.println(e2.getLives());
+		System.out.println(e3.getLives());
+		System.out.println(se1.getLives());
+		
+		e2.ReduceHealth(9);
+		se1.ReduceHealth(250);
+		
+		System.out.println(e1.getHealth());
+		System.out.println(e2.getHealth());
+		System.out.println(e3.getHealth());
+		System.out.println(se1.getHealth());
+	}
+
+}

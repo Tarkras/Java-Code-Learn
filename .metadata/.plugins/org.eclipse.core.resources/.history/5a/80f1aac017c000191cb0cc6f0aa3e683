@@ -1,0 +1,32 @@
+package enumeration;
+
+public class Enumeration {
+	
+	enum DayTranslation {
+		MONDAY("Lunes"),
+		TUESDAY("Martes"),
+		WEDNSDAY("Miercoles"),
+		THURSDAY("Jueves"),
+		FRIDAY("Viernes"),
+		SATURDAY("Sabado"),
+		SUNDAY("Domingo");
+		
+		
+	    String trl;
+		DayTranslation(String trl){
+			this.trl = trl;
+		}
+		
+		public String getTranslation() { return trl}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for(DayTranslation dt: DayTranslation.values()) {
+			System.out.println(dt.toString());
+		}
+		
+	}
+
+}

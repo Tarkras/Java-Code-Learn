@@ -1,0 +1,7 @@
+package Characters;
+
+public interface Characters {
+	
+	public void ReduceHealth(int damage);
+	
+}
